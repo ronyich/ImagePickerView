@@ -10,6 +10,9 @@ import UIKit
 
 class ImagePickerContentTableViewCell: UITableViewCell {
 
+
+    @IBOutlet weak var contentTextView: UITextView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

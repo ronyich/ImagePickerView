@@ -8,16 +8,18 @@
 
 import UIKit
 
-class HomePageTableViewController: UITableViewController {
+class HomePageTableViewController: UITableViewController, ImagePickerViewDelegate {
 
     var pictures: [Picture] = []
-
-    var testArray = ["1", "2", "3"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        configDelegation()
+
         registerTableViewCell()
+
+        tableView.reloadData()
 
     }
 
@@ -42,13 +44,52 @@ class HomePageTableViewController: UITableViewController {
             else { fatalError("As HomePageTableViewCell error.")
         }
 
+        if pictures.count > 1, pictures.first != nil {
+
+            cell.pictureImageView.image = pictures[indexPath.row].image
+            cell.titleLabel.text = pictures[indexPath.row].title
+
+        } else {
+
+            print("pictures is nil")
+
+        }
+
         return cell
+
+    }
+
+    func imagePicker(_ imagePicker: ImagePickerViewTableViewController, didFetch pictures: [Picture]) {
+
+        print("pictures:", pictures)
+
+        DispatchQueue.main.async {
+
+            self.pictures = pictures
+
+            self.tableView.reloadData()
+
+        }
 
     }
 
     func registerTableViewCell() {
 
         tableView.register(UINib(nibName: "HomePageTableViewCell", bundle: nil), forCellReuseIdentifier: "HomePageTableViewCell")
+
+    }
+
+    func configDelegation() {
+
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+        guard
+            let imagePickerViewTableViewController = storyboard.instantiateViewController(withIdentifier: "ImagePickerViewTableViewController") as? ImagePickerViewTableViewController
+            else { print("As ImagePickerViewTableViewController error")
+                return
+        }
+
+        imagePickerViewTableViewController.delegate = self
 
     }
 

@@ -9,13 +9,27 @@
 import UIKit
 import ImagePicker
 
+protocol ImagePickerViewDelegate: AnyObject {
+
+    func imagePicker(_ imagePicker: ImagePickerViewTableViewController, didFetch pictures: [Picture])
+
+}
+
 class ImagePickerViewTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    weak var delegate: ImagePickerViewDelegate?
 
     @IBOutlet weak var tableView: UITableView!
 
     let imagePickerController = ImagePickerController()
 
     let tapGestureRecognizer = UITapGestureRecognizer()
+
+    var image = UIImage()
+
+    var picture = Picture(title: "", content: "", image: UIImage())
+
+    var pictures: [Picture] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,8 +67,9 @@ class ImagePickerViewTableViewController: UIViewController, UITableViewDelegate,
 
             cell.pictureImageView.addGestureRecognizer(tapGestureRecognizer)
             cell.pictureImageView.isUserInteractionEnabled = true
-            
             tapGestureRecognizer.addTarget(self, action: #selector(pickImageView))
+
+            cell.pictureImageView.image = image
 
             return cell
 
@@ -65,6 +80,8 @@ class ImagePickerViewTableViewController: UIViewController, UITableViewDelegate,
                 else { fatalError("As ImagePickerTitleTableViewCell error.")
             }
 
+            picture.title = cell.titleTextField.text ?? ""
+
             return cell
 
         case 2:
@@ -73,6 +90,8 @@ class ImagePickerViewTableViewController: UIViewController, UITableViewDelegate,
                 let cell = tableView.dequeueReusableCell(withIdentifier: "ImagePickerContentTableViewCell", for: indexPath) as? ImagePickerContentTableViewCell
                 else { fatalError("As ImagePickerContentTableViewCell error.")
             }
+
+            picture.content = cell.contentTextView.text
 
             return cell
 
@@ -98,6 +117,32 @@ class ImagePickerViewTableViewController: UIViewController, UITableViewDelegate,
 
     }
 
+    @IBAction func saveImageData(_ sender: UIButton) {
+
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+        guard
+            let homePageTableViewController = storyboard.instantiateViewController(withIdentifier: "HomePageTableViewController") as? HomePageTableViewController
+            else { print("As HomePageTableViewController error")
+                return
+        }
+
+        pictures.append(self.picture)
+
+        self.delegate = homePageTableViewController
+
+        self.delegate?.imagePicker(self, didFetch: pictures)
+
+        //homePageTableViewController.pictures = pictures
+
+        //homePageTableViewController.tableView.reloadData()
+
+        navigationController?.popViewController(animated: true)
+
+        print("pictures in ImagePickerViewTableViewController: ", pictures)
+
+    }
+
 }
 
 extension ImagePickerViewTableViewController: ImagePickerDelegate {
@@ -105,12 +150,28 @@ extension ImagePickerViewTableViewController: ImagePickerDelegate {
     func wrapperDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
 
     }
-    
+
     func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
 
+        guard
+            let firstImage = images.first
+            else { print("firstImage is nil.")
+                return
+        }
+
+        image = firstImage
+
+        picture.image = firstImage
+
+        tableView.reloadData()
+
+        dismiss(animated: true, completion: nil)
+
     }
-    
+
     func cancelButtonDidPress(_ imagePicker: ImagePickerController) {
+
+        dismiss(animated: true, completion: nil)
 
     }
 
