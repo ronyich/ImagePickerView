@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ImagePickerTitleTableViewCell" customModule="ImagePickerView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5C8-qZ-3y8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56.5"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r7a-gP-at3">
+                                <rect key="frame" x="22" y="8.5" width="331" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HCD-2Z-cOJ"/>
+                                    <constraint firstAttribute="width" constant="331" id="qih-OL-b4S"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r7a-gP-at3" firstAttribute="centerY" secondItem="5C8-qZ-3y8" secondAttribute="centerY" id="0AK-4v-F6m"/>
+                            <constraint firstAttribute="height" constant="56" id="L6U-Ka-b05"/>
+                            <constraint firstItem="r7a-gP-at3" firstAttribute="centerX" secondItem="5C8-qZ-3y8" secondAttribute="centerX" id="Zya-yn-1E2"/>
+                            <constraint firstAttribute="width" constant="375" id="gcO-8N-5jx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5C8-qZ-3y8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7ya-L6-2oB"/>
+                    <constraint firstAttribute="bottom" secondItem="5C8-qZ-3y8" secondAttribute="bottom" id="GnE-If-j9J"/>
+                    <constraint firstItem="5C8-qZ-3y8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lzB-S3-VbY"/>
+                    <constraint firstAttribute="trailing" secondItem="5C8-qZ-3y8" secondAttribute="trailing" id="wDW-he-lYR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="titleTextField" destination="r7a-gP-at3" id="Cfm-bp-5Iy"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="142.1289355322339"/>
+        </tableViewCell>
+    </objects>
+</document>

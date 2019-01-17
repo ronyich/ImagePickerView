@@ -7,21 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E8E311CE67BC7F36892B8C2 /* Pods_ImagePickerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB0CB3E00DA53BE74D7B1AE /* Pods_ImagePickerView.framework */; };
 		689FF42421F0282B00ED87CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FF42321F0282B00ED87CA /* AppDelegate.swift */; };
-		689FF42621F0282B00ED87CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FF42521F0282B00ED87CA /* ViewController.swift */; };
 		689FF42921F0282B00ED87CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689FF42721F0282B00ED87CA /* Main.storyboard */; };
 		689FF42B21F0282E00ED87CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 689FF42A21F0282E00ED87CA /* Assets.xcassets */; };
 		689FF42E21F0282E00ED87CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689FF42C21F0282E00ED87CA /* LaunchScreen.storyboard */; };
+		689FF43721F02AF400ED87CA /* HomePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FF43521F02AF400ED87CA /* HomePageTableViewController.swift */; };
+		689FF43B21F0308600ED87CA /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FF43A21F0308600ED87CA /* Picture.swift */; };
+		689FF44021F038F100ED87CA /* HomePageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FF43E21F038F100ED87CA /* HomePageTableViewCell.swift */; };
+		689FF44121F038F100ED87CA /* HomePageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 689FF43F21F038F100ED87CA /* HomePageTableViewCell.xib */; };
+		689FF44321F03F1900ED87CA /* ImagePickerViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FF44221F03F1900ED87CA /* ImagePickerViewTableViewController.swift */; };
+		689FF44A21F0435F00ED87CA /* ImagePickerImageViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FF44821F0435F00ED87CA /* ImagePickerImageViewTableViewCell.swift */; };
+		689FF44B21F0435F00ED87CA /* ImagePickerImageViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 689FF44921F0435F00ED87CA /* ImagePickerImageViewTableViewCell.xib */; };
+		689FF44F21F043B900ED87CA /* ImagePickerTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FF44D21F043B900ED87CA /* ImagePickerTitleTableViewCell.swift */; };
+		689FF45021F043B900ED87CA /* ImagePickerTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 689FF44E21F043B900ED87CA /* ImagePickerTitleTableViewCell.xib */; };
+		689FF45321F044D200ED87CA /* ImagePickerContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FF45121F044D200ED87CA /* ImagePickerContentTableViewCell.swift */; };
+		689FF45421F044D200ED87CA /* ImagePickerContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 689FF45221F044D200ED87CA /* ImagePickerContentTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1950A6AB5FC694A2E4F8E2DF /* Pods-ImagePickerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePickerView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImagePickerView/Pods-ImagePickerView.release.xcconfig"; sourceTree = "<group>"; };
+		2CB0CB3E00DA53BE74D7B1AE /* Pods_ImagePickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImagePickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		689FF42021F0282B00ED87CA /* ImagePickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		689FF42321F0282B00ED87CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		689FF42521F0282B00ED87CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		689FF42821F0282B00ED87CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		689FF42A21F0282E00ED87CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		689FF42D21F0282E00ED87CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		689FF42F21F0282E00ED87CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		689FF43521F02AF400ED87CA /* HomePageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTableViewController.swift; sourceTree = "<group>"; };
+		689FF43A21F0308600ED87CA /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		689FF43E21F038F100ED87CA /* HomePageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTableViewCell.swift; sourceTree = "<group>"; };
+		689FF43F21F038F100ED87CA /* HomePageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageTableViewCell.xib; sourceTree = "<group>"; };
+		689FF44221F03F1900ED87CA /* ImagePickerViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewTableViewController.swift; sourceTree = "<group>"; };
+		689FF44821F0435F00ED87CA /* ImagePickerImageViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerImageViewTableViewCell.swift; sourceTree = "<group>"; };
+		689FF44921F0435F00ED87CA /* ImagePickerImageViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePickerImageViewTableViewCell.xib; sourceTree = "<group>"; };
+		689FF44D21F043B900ED87CA /* ImagePickerTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerTitleTableViewCell.swift; sourceTree = "<group>"; };
+		689FF44E21F043B900ED87CA /* ImagePickerTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePickerTitleTableViewCell.xib; sourceTree = "<group>"; };
+		689FF45121F044D200ED87CA /* ImagePickerContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerContentTableViewCell.swift; sourceTree = "<group>"; };
+		689FF45221F044D200ED87CA /* ImagePickerContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePickerContentTableViewCell.xib; sourceTree = "<group>"; };
+		D2D993D6A7478A726926B74E /* Pods-ImagePickerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePickerView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImagePickerView/Pods-ImagePickerView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +53,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E8E311CE67BC7F36892B8C2 /* Pods_ImagePickerView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		355382E833FFF1424532AD76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CB0CB3E00DA53BE74D7B1AE /* Pods_ImagePickerView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CD7AFDADE3AB7D82EF1C573 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2D993D6A7478A726926B74E /* Pods-ImagePickerView.debug.xcconfig */,
+				1950A6AB5FC694A2E4F8E2DF /* Pods-ImagePickerView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		682D704621F06228001D149E /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				689FF43521F02AF400ED87CA /* HomePageTableViewController.swift */,
+				689FF43E21F038F100ED87CA /* HomePageTableViewCell.swift */,
+				689FF43F21F038F100ED87CA /* HomePageTableViewCell.xib */,
+			);
+			path = "Home Page";
+			sourceTree = "<group>";
+		};
 		689FF41721F0282B00ED87CA = {
 			isa = PBXGroup;
 			children = (
 				689FF42221F0282B00ED87CA /* ImagePickerView */,
 				689FF42121F0282B00ED87CA /* Products */,
+				4CD7AFDADE3AB7D82EF1C573 /* Pods */,
+				355382E833FFF1424532AD76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +109,37 @@
 			isa = PBXGroup;
 			children = (
 				689FF42321F0282B00ED87CA /* AppDelegate.swift */,
-				689FF42521F0282B00ED87CA /* ViewController.swift */,
-				689FF42721F0282B00ED87CA /* Main.storyboard */,
+				689FF43D21F037B600ED87CA /* Model */,
+				682D704621F06228001D149E /* Home Page */,
+				689FF44221F03F1900ED87CA /* ImagePickerViewTableViewController.swift */,
+				689FF44821F0435F00ED87CA /* ImagePickerImageViewTableViewCell.swift */,
+				689FF44921F0435F00ED87CA /* ImagePickerImageViewTableViewCell.xib */,
+				689FF44D21F043B900ED87CA /* ImagePickerTitleTableViewCell.swift */,
+				689FF44E21F043B900ED87CA /* ImagePickerTitleTableViewCell.xib */,
+				689FF45121F044D200ED87CA /* ImagePickerContentTableViewCell.swift */,
+				689FF45221F044D200ED87CA /* ImagePickerContentTableViewCell.xib */,
+				689FF44C21F0436D00ED87CA /* View */,
 				689FF42A21F0282E00ED87CA /* Assets.xcassets */,
 				689FF42C21F0282E00ED87CA /* LaunchScreen.storyboard */,
 				689FF42F21F0282E00ED87CA /* Info.plist */,
 			);
 			path = ImagePickerView;
+			sourceTree = "<group>";
+		};
+		689FF43D21F037B600ED87CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				689FF43A21F0308600ED87CA /* Picture.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		689FF44C21F0436D00ED87CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				689FF42721F0282B00ED87CA /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 689FF43221F0282E00ED87CA /* Build configuration list for PBXNativeTarget "ImagePickerView" */;
 			buildPhases = (
+				DD6B5E378ED57A8C2095C65A /* [CP] Check Pods Manifest.lock */,
 				689FF41C21F0282B00ED87CA /* Sources */,
 				689FF41D21F0282B00ED87CA /* Frameworks */,
 				689FF41E21F0282B00ED87CA /* Resources */,
+				2CE521CD6B001BADCE58C6F2 /* [CP] Embed Pods Frameworks */,
+				689FF43921F02B4400ED87CA /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -124,19 +205,86 @@
 			files = (
 				689FF42E21F0282E00ED87CA /* LaunchScreen.storyboard in Resources */,
 				689FF42B21F0282E00ED87CA /* Assets.xcassets in Resources */,
+				689FF45021F043B900ED87CA /* ImagePickerTitleTableViewCell.xib in Resources */,
+				689FF45421F044D200ED87CA /* ImagePickerContentTableViewCell.xib in Resources */,
 				689FF42921F0282B00ED87CA /* Main.storyboard in Resources */,
+				689FF44B21F0435F00ED87CA /* ImagePickerImageViewTableViewCell.xib in Resources */,
+				689FF44121F038F100ED87CA /* HomePageTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CE521CD6B001BADCE58C6F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ImagePickerView/Pods-ImagePickerView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ImagePicker/ImagePicker.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImagePicker.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImagePickerView/Pods-ImagePickerView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		689FF43921F02B4400ED87CA /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		DD6B5E378ED57A8C2095C65A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImagePickerView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		689FF41C21F0282B00ED87CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				689FF42621F0282B00ED87CA /* ViewController.swift in Sources */,
+				689FF44021F038F100ED87CA /* HomePageTableViewCell.swift in Sources */,
+				689FF44321F03F1900ED87CA /* ImagePickerViewTableViewController.swift in Sources */,
+				689FF44A21F0435F00ED87CA /* ImagePickerImageViewTableViewCell.swift in Sources */,
+				689FF43B21F0308600ED87CA /* Picture.swift in Sources */,
 				689FF42421F0282B00ED87CA /* AppDelegate.swift in Sources */,
+				689FF43721F02AF400ED87CA /* HomePageTableViewController.swift in Sources */,
+				689FF44F21F043B900ED87CA /* ImagePickerTitleTableViewCell.swift in Sources */,
+				689FF45321F044D200ED87CA /* ImagePickerContentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +428,13 @@
 		};
 		689FF43321F0282E00ED87CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2D993D6A7478A726926B74E /* Pods-ImagePickerView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CK2N9YKQ3S;
 				INFOPLIST_FILE = ImagePickerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +448,13 @@
 		};
 		689FF43421F0282E00ED87CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1950A6AB5FC694A2E4F8E2DF /* Pods-ImagePickerView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CK2N9YKQ3S;
 				INFOPLIST_FILE = ImagePickerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
